@@ -6,7 +6,7 @@ chrome.omnibox.onInputEntered.addListener(function (text) {
   var bangs = {
     '!s': 'https://open.spotify.com/search/results/',
     '!g': 'https://www.google.com/search?q=',
-    '!d': 'https://duckduckgo.com/?q=',
+    '!d': 'https://duckduckgo.com/?q=!ducky+',
     '!m': 'https://www.google.com/maps?q=',
     '!w': 'https://en.wikipedia.org/wiki/',
     '!yt': 'https://www.youtube.com/results?search_query=',
