@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "omnibang",
+  "version": "1.0",
+
+  "description": "bang",
+
+  "omnibox": {
+    "keyword": "jj"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["bang.js"]
+    }
+  ],
+
+  "permissions": [
+    "https://searchfox.org/"
+  ]
+
+}
