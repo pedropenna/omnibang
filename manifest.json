@@ -10,15 +10,12 @@
     "keyword": "jj"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["bang.js"]
+  "applications": {
+    "gecko": {
+      "strict_min_version": "52.0a1"
     }
-  ],
-
-  "permissions": [
-    "https://searchfox.org/"
-  ]
-
+  },
+  "background": {
+    "scripts": ["bang.js"]
+  }
 }
